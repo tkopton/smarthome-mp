@@ -1,0 +1,49 @@
+{
+    "connections": [
+        {
+            "certificates": [],
+            "credential": {
+                "credential_kind_key": "smarthome_user",
+                "password": {
+                    "password": true,
+                    "required": true,
+                    "value": "Secret"
+                },
+                "user": {
+                    "password": false,
+                    "required": true,
+                    "value": "admin"
+                }
+            },
+            "identifiers": {
+                "ID": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "1"
+                },
+                "container_memory_limit": {
+                    "part_of_uniqueness": false,
+                    "required": true,
+                    "value": "1024"
+                },
+                "host": {
+                    "part_of_uniqueness": true,
+                    "required": true,
+                    "value": "192.168.0.116"
+                },
+                "port": {
+                    "part_of_uniqueness": false,
+                    "required": true,
+                    "value": "8080"
+                }
+            },
+            "name": "shmanager01",
+            "suite_api_hostname": null,
+            "suite_api_password": null,
+            "suite_api_username": null
+        }
+    ],
+    "suite_api_hostname": "placeholder_hostname",
+    "suite_api_password": "placeholder_password",
+    "suite_api_username": "placeholder_username"
+}

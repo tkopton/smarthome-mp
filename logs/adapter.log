@@ -1,0 +1,18 @@
+2024-10-17 12:55:39,623 __main__ INFO Running adapter code with arguments: ['test', '/tmp/tmpex_z_3uc/input_pipe', '/tmp/tmpex_z_3uc/output_pipe']
+2024-10-17 12:55:39,625 __main__ INFO Starting 'Test'
+2024-10-17 12:55:39,625 __main__ INFO http://192.168.0.116:8080
+2024-10-17 12:55:46,399 __main__ INFO POST request successful!
+2024-10-17 12:55:46,400 __main__ INFO Status code: 200
+2024-10-17 12:55:46,400 __main__ INFO Response data: {'token_type': 'Bearer', 'access_token': 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhbGwiLCJleHAiOjE3MjkzNDI1MzcsImlhdCI6MTcyOTE2OTczNywiaXNzIjoiOTE0MTAwMDQwODE0IiwianRpIjoiMzRiMjgyMzIxZmY5NDZhNjg5ZDk0NjVkYjUwNDlhYzAiLCJzdWIiOiJhZG1pbiIsInVzZXJfcGVybWlzc2lvbnMiOiJGRkZGRkZGRkZGRkZGRkZGIiwiZGV2aWNlIjoiOTE0MTAwMDQwODE0In0=.bNBS2SzZbg2VcX0WehQnxxTModKMbSTSrWoU8OrDGGQSc0IFqamprHzCVBCHNvcyyRQnfy6cMuSGSYh+0ju7MZ8EXtTC+swIuDX8gYM/gmK6XRtS0c/VuRTGOlYTaqojZyCpPefQljU/EKiarURRE88ebNmIuwIKL9fIm4P0Doo=', 'expires_in': 172800, 'refresh_token': '34b282321ff946a689d9465db5049ac0'}
+2024-10-17 12:55:46,400 __main__ INFO B-Token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhbGwiLCJleHAiOjE3MjkzNDI1MzcsImlhdCI6MTcyOTE2OTczNywiaXNzIjoiOTE0MTAwMDQwODE0IiwianRpIjoiMzRiMjgyMzIxZmY5NDZhNjg5ZDk0NjVkYjUwNDlhYzAiLCJzdWIiOiJhZG1pbiIsInVzZXJfcGVybWlzc2lvbnMiOiJGRkZGRkZGRkZGRkZGRkZGIiwiZGV2aWNlIjoiOTE0MTAwMDQwODE0In0=.bNBS2SzZbg2VcX0WehQnxxTModKMbSTSrWoU8OrDGGQSc0IFqamprHzCVBCHNvcyyRQnfy6cMuSGSYh+0ju7MZ8EXtTC+swIuDX8gYM/gmK6XRtS0c/VuRTGOlYTaqojZyCpPefQljU/EKiarURRE88ebNmIuwIKL9fIm4P0Doo=
+2024-10-17 12:55:46,518 __main__ INFO POST request successful!
+2024-10-17 12:55:46,518 __main__ INFO Status code: 200
+2024-10-17 12:55:46,518 __main__ INFO Response data: {'serialNumber': '914100040814', 'connected': True, 'appVersion': '3.1.1111.0', 'osVersion': '1.914', 'configVersion': '744', 'controllerType': 'Classic'}
+2024-10-17 12:55:46,518 __main__ INFO Finished 'Test' in 6.89s
+2024-10-17 12:55:46,520 __main__ INFO Timing Graph: 
+━━━━━━━━━┯━━━━━━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Operation│Time    │t=0s                                                          t=6.89s
+━━━━━━━━━┿━━━━━━━━┿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Test     │6.89s   │╾───────────────────────────────────────────────────────────────────╼
+━━━━━━━━━┷━━━━━━━━┷━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+

@@ -1,0 +1,6 @@
+ADAPTER_KIND = "tkSmartHome"
+ADAPTER_NAME = "tk-SmartHome"
+HOST_IDENTIFIER = "host"
+PORT_IDENTIFIER = "port"
+USER_CREDENTIAL = "user"
+PASSWORD_CREDENTIAL = "password"
