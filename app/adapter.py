@@ -121,7 +121,7 @@ def test(adapter_instance: AdapterInstance) -> TestResult:
 
             # Define the headers with Authorization
             headers = {
-                'Authorization': 'Basic Y2xpZW50SWQ6Y2xpZW50UGFzcw==',  # Replace YOUR_ACCESS_TOKEN with your actual access token
+                'Authorization': 'Basic Y==',  # Replace YOUR_ACCESS_TOKEN with your actual access token
                 'Content-Type': 'application/json',
                 'Accept': '*/*',
                 'Accept-Encoding': 'gzip, deflate'
