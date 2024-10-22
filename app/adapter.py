@@ -234,11 +234,6 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
             else:
                 logger.error("Error:", status_code)
 
-            system = result.object(ADAPTER_KIND, "system", "System")
-            system.with_property("systemid", "SH-Manager01")
-            system = result.object(ADAPTER_KIND, "system", "NewSystem")
-            system.with_property("systemid", "SH-Manager02")
-
             devicecollector = DeviceCollector(adapter_instance, sh_token, host, result, logger)
             result = devicecollector.collect()
 
