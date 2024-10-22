@@ -37,7 +37,7 @@ class DeviceCollector:
             for obj in response_data:
                 self.logger.info("Device ID:" + obj["id"])
                 self.logger.info("Serial Number:" + obj["serialNumber"])
-                self.logger.info("Serial Number:" + obj["config"]["name"])
+                self.logger.info("Device Name:" + obj["config"]["name"])
                 # creating object and adding it to the result set
                 device_obj = self.result.object(ADAPTER_KIND, "device", obj["config"]["name"])
                 device_obj.with_property(
