@@ -215,7 +215,7 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
 
             # Define the headers with Authorization
             headers = {
-                'Authorization': 'Basic Y2xpZW50SWQ6Y2xpZW50UGFzcw==',
+                'Authorization': 'Basic xxx==',
                 # Replace YOUR_ACCESS_TOKEN with your actual access token
                 'Content-Type': 'application/json',
                 'Accept': '*/*',
