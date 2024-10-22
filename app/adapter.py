@@ -78,6 +78,7 @@ def get_adapter_definition() -> AdapterDefinition:
         # Object types definition section
 
         system = definition.define_object_type("system", "System")
+        system.define_string_property("systemid", "SystemID")
         device = definition.define_object_type("device", "Device")
         device.define_string_property("id", "ID")
         device.define_string_property("serialnumber", "Serial Number")
@@ -234,6 +235,9 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
                 logger.error("Error:", status_code)
 
             system = result.object(ADAPTER_KIND, "system", "System")
+            system.with_property("systemid", "SH-Manager01")
+            system = result.object(ADAPTER_KIND, "system", "NewSystem")
+            system.with_property("systemid", "SH-Manager02")
 
             devicecollector = DeviceCollector(adapter_instance, sh_token, host, result, logger)
             result = devicecollector.collect()
