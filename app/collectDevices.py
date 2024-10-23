@@ -8,7 +8,6 @@ from constants import PASSWORD_CREDENTIAL
 
 from restcall import RestClient
 
-
 class DeviceCollector:
     def __init__(self, adapter_instance, token, fqdn, result, logger):
         self.fqdn = fqdn
@@ -34,19 +33,20 @@ class DeviceCollector:
             self.logger.info("POST request successful!")
             self.logger.info("Status code: " + str(status_code))
             # logger.info("Response data: " + str(response_data))
-            # Creating two system instances manually for demo purposes
-            system = self.result.object(ADAPTER_KIND, "system", "System")
-            system.with_property("systemid", "SH-Manager01")
-            system = self.result.object(ADAPTER_KIND, "system", "NewSystem")
-            system.with_property("systemid", "SH-Manager02")
-
+            
+            #creating two instances of object type system manually for demo purposes
+            system01 = self.result.object(ADAPTER_KIND, "system", "System")
+            system01.with_property("systemid", "SH-Manager01")
+            system02 = self.result.object(ADAPTER_KIND, "system", "NewSystem")
+            system02.with_property("systemid", "SH-Manager02")
+            
             for obj in response_data:
                 # self.logger.info("Device ID:" + obj["id"])
                 # self.logger.info("Serial Number:" + obj["serialNumber"])
                 # self.logger.info("Device Name:" + obj["config"]["name"])
-                
                 # creating object and adding it to the result set
                 device_obj = self.result.object(ADAPTER_KIND, "device", obj["config"]["name"])
+                system01.add_child(device_obj)
                 device_obj.with_property(
                     "id", obj["id"]
                 )

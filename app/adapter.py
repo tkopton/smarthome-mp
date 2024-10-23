@@ -122,7 +122,7 @@ def test(adapter_instance: AdapterInstance) -> TestResult:
 
             # Define the headers with Authorization
             headers = {
-                'Authorization': 'Basic Y==',  # Replace YOUR_ACCESS_TOKEN with your actual access token
+                'Authorization': 'Basic Y2xpZW50SWQ6Y2xpZW50UGFzcw==',  # Replace YOUR_ACCESS_TOKEN with your actual access token
                 'Content-Type': 'application/json',
                 'Accept': '*/*',
                 'Accept-Encoding': 'gzip, deflate'
@@ -157,7 +157,7 @@ def test(adapter_instance: AdapterInstance) -> TestResult:
             if status_code == 200:
                 logger.info("POST request successful!")
                 logger.info("Status code: " + str(status_code))
-                logger.info("Response data: " + str(response_data))
+                # logger.info("Response data: " + str(response_data))
             else:
                 logger.error("Error:", status_code)
             # my code END
@@ -181,7 +181,7 @@ def test(adapter_instance: AdapterInstance) -> TestResult:
             result.with_error("Unexpected connection test error: " + repr(e))
         finally:
             # TODO: If any connections are still open, make sure they are closed before returning
-            logger.debug(f"Returning test result: {result.get_json()}")
+            # logger.debug(f"Returning test result: {result.get_json()}")
             return result
 
 
@@ -216,7 +216,7 @@ def collect(adapter_instance: AdapterInstance) -> CollectResult:
 
             # Define the headers with Authorization
             headers = {
-                'Authorization': 'Basic xxx==',
+                'Authorization': 'Basic Y2xpZW50SWQ6Y2xpZW50UGFzcw==',
                 # Replace YOUR_ACCESS_TOKEN with your actual access token
                 'Content-Type': 'application/json',
                 'Accept': '*/*',
